@@ -1,2 +1,2 @@
 # leetcode
-Repository to solve leetcode problems.
+Repository where I will solve and document leetcode problems.
