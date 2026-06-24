@@ -11,4 +11,5 @@ class Solution:
                 lst.append(parenthesis)
             elif lst[-1] == opening[closing.index(parenthesis)]:
                 lst.pop()
-        return bool(lst)
+        lst_is_empty = not bool(lst)
+        return lst_is_empty
