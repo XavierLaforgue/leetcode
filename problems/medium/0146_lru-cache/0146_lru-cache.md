@@ -1,12 +1,12 @@
-# Q1. LRU Cache
+# 0146. LRU Cache
 
-## Difficulty
+## Solved
 
-Medium
-
-## Topics
+- 2026-06-22 (2026 Spring Sprint Quest)
 
 ## Description
+
+[leetcode/description](https://leetcode.com/problems/lru-cache/description/)
 
 Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.
 
