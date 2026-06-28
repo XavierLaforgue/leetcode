@@ -2,7 +2,7 @@
 
 ## Solved
 
-- 2026-06-28 (Daily Challenge)
+- 2026-06-28
 
 ## Description
 
