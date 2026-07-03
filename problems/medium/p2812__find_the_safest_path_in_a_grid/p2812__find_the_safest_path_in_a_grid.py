@@ -1,5 +1,5 @@
 from collections import deque
-from threading import local
+import heapq
 
 
 class Solution:
@@ -37,7 +37,8 @@ class Solution:
         return neighbours
 
     @staticmethod
-    def get_safeness_per_cell(grid: list[list[int]], grid_size: int) -> list[list[int]]:
+    def get_safeness_per_cell(grid: list[list[int]], grid_size: int)\
+            -> list[list[int]]:
         safeness_grid, visit_queue = Solution.create_thief_queue_and_grid(grid)
         while visit_queue:
             row_num, elem_num = visit_queue.pop()
@@ -51,5 +52,24 @@ class Solution:
 
     def maximumSafenessFactor(self, grid: list[list[int]]) -> int:
         grid_size = len(grid)
+        if grid[0][0] == 1 or grid[grid_size - 1][grid_size - 1] == 1:
+            return 0
         safeness_grid = Solution.get_safeness_per_cell(grid, grid_size)
-        return 0
+        maxheap = [(-safeness_grid[0][0], 0, 0)]
+        heapq.heapify(maxheap)
+        max_safe_path_to_cell = [[-1]*grid_size for _ in range(grid_size)]
+        while maxheap:
+            danger_to_cell, row_num, elem_num = heapq.heappop(maxheap)
+            if max_safe_path_to_cell[row_num][elem_num] != -1:
+                continue
+            max_safe_path_to_cell[row_num][elem_num] = -danger_to_cell
+            neighbours = Solution.get_neighbours(row_num, elem_num, grid_size)
+            for neighbour_row_num, neighbour_elem_num in neighbours:
+                heapq.heappush(
+                    maxheap,
+                    (-min(
+                        safeness_grid[neighbour_row_num][neighbour_elem_num],
+                        -danger_to_cell
+                        ),
+                     neighbour_row_num, neighbour_elem_num))
+        return max_safe_path_to_cell[grid_size - 1][grid_size - 1]
