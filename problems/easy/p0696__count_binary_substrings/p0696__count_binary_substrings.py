@@ -5,8 +5,8 @@ class Solution:
         count_prev = 0
         count_curr = 1
         count_subs = 0
-        for idx, char in enumerate(s[1:], 1):
-            if char == s[idx-1]:
+        for idx in range(1, len(s)):
+            if s[idx] == s[idx-1]:
                 count_curr += 1
                 if count_prev >= count_curr:
                     count_subs += 1
