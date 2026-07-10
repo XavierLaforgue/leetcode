@@ -13,3 +13,5 @@ class TestCountBinarySubstring(unittest.TestCase):
     def test2(self):
         self.assertEqual(self.sol.countBinarySubstrings("10101"), 4)
 
+    def test3(self):
+        self.assertEqual(self.sol.countBinarySubstrings("100111001"), 6)
