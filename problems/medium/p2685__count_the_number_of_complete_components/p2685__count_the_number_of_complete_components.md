@@ -34,8 +34,7 @@ A connected component is said to be **complete** if there exists an edge between
 
 - `1 <= n <= 50`
 - `0 <= edges.length <= n * (n - 1) / 2`
-- `edges[i].length == 2
+- `edges[i].length == 2`
 - `0 <= a_i, b_i <= n - 1`
 - `a_i != b_i`
 - There are no repeated edges.
-

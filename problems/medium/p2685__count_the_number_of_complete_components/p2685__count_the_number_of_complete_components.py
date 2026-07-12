@@ -1,12 +1,10 @@
 class Solution:
     def countCompleteComponents(self, n: int, edges: list[list[int]]) -> int:
-        vertices_edges: dict[int, set] = dict()
         count = 0
-        for i in range(n):
-            vertices_edges[i] = set()
-        for edge in edges:
-            vertices_edges[edge[0]].add(edge[1])
-            vertices_edges[edge[1]].add(edge[0])
+        vertices_edges: dict[int, set] = {i: set() for i in range(n)}
+        for v1, v2 in edges:
+            vertices_edges[v1].add(v2)
+            vertices_edges[v2].add(v1)
         checked = set()
         for vertex in vertices_edges:
             if vertex in checked:
