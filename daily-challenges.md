@@ -6,3 +6,4 @@
 - 2026-07-03 -> [#2812 Find the Safest Path in a Grid](./problems/medium/p2812__find_the_safest_path_in_a_grid/p2812__find_the_safest_path_in_a_grid.py)
 - 2026-07-07 -> [#3754 Concatenate Non-Zero Digits and Multiply by Sum I](./problems/easy/p3754__concatenate_non_zero_digits_and_multiply_by_sum_I/p3754__concatenate_non_zero_digits_and_multiply_by_sum_I.py)
 - 2026-07-11 -> [#2685 Count the Number of Complete Components](./problems/medium/p2685__count_the_number_of_complete_components/p2685__count_the_number_of_complete_components.py)
+- 2026-07-12 -> [#1331 Rank Transform of an Array](./problems/easy/p1331__rank_transform_of_an_array/p1331__rank_transform_of_an_array.py)
