@@ -7,3 +7,4 @@
 - 2026-07-07 -> [#3754 Concatenate Non-Zero Digits and Multiply by Sum I](./problems/easy/p3754__concatenate_non_zero_digits_and_multiply_by_sum_I/p3754__concatenate_non_zero_digits_and_multiply_by_sum_I.py)
 - 2026-07-11 -> [#2685 Count the Number of Complete Components](./problems/medium/p2685__count_the_number_of_complete_components/p2685__count_the_number_of_complete_components.py)
 - 2026-07-12 -> [#1331 Rank Transform of an Array](./problems/easy/p1331__rank_transform_of_an_array/p1331__rank_transform_of_an_array.py)
+- 2026-07-15 -> [#3658 GCD of Odd and Even Sums](./problems/easy/p3658__gcd_of_odd_and_even_sums/p3658__gcd_of_odd_and_even_sums.py)
